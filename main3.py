@@ -47,7 +47,7 @@ def feature_extraction(img_path, model):
     normalized_result = result / norm(result)
 
     return normalized_result
-styles_df = pd.read_csv('https://github.com/PreetiNalawade/product-recommendations-streamlit-app/blob/main/styles.csv')
+styles_df = pd.read_csv('styles.csv')
 def recommend(features, feature_list):
     neighbors = NearestNeighbors(n_neighbors=6, algorithm='brute', metric='euclidean')
     neighbors.fit(feature_list)
