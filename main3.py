@@ -28,7 +28,7 @@ model = tf.keras.Sequential([
 ])
 
 # Load styles DataFrame
-styles_df = pd.read_csv('styles.csv', error_bad_lines=False)
+styles_df = pd.read_csv('styles.csv')
 
 # Function to recommend products
 def recommend(features, feature_list):
