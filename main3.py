@@ -118,4 +118,4 @@ if uploaded_file is not None:
             all_products_table = pd.DataFrame(product_info_list)
             st.table(all_products_table)
         else:
-            st.warning("No products details found.")
+            #st.warning("No products details found.")
